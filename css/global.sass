@@ -178,15 +178,33 @@ a
                 overflow: hidden
                 height: 600px
                 background: #fff
+                position: relative
 
                 img 
                     width: 100% 
+                    height: 100%
                     transition: all 0.5s ease
                     opacity: 1
 
-                    &:hover
+            
+                p 
+                    position: absolute
+                    font-size: 40px
+                    color: $cWhite
+                    bottom: 30px
+                    left: 30px
+                    text-transform: uppercase
+                    transition: 0.5s ease
+                    font-family: "Josefin Sans", sans-serif
+                    font-weight: 300
+
+                &:hover
+                    img 
                         transform: scale(1.1)
                         opacity: 0.5
+
+                    p 
+                        color: #000
 
 
 .section-footer 
@@ -269,5 +287,3 @@ a
 
             .copyright 
                 color: rgba(#fff, .5)
-
- 
