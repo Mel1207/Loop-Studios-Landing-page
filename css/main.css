@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 0;
+  z-index: 10;
+}
+.nav-top .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-top .nav-container .nav-logo {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-top .nav-container .nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  list-style: none;
+}
+.nav-top .nav-container .nav-links a {
+  color: #fff;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.header {
+  position: relative;
+  height: 80vh;
+  background: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.header .cover {
+  background: #000;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+.header h1 {
+  position: absolute;
+  top: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  transform: translateY(-50%);
+  padding: 2.5rem 4rem;
+  font-size: 80px;
+  letter-spacing: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  z-index: 2;
+}
+
+.section-1 {
+  padding: 10vh 0;
+}
+.section-1 .container {
+  position: relative;
+  overflow: hidden;
+}
+.section-1 img {
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+}
+.section-1 .card {
+  height: auto;
+  width: 50%;
+  background: #fff;
+  padding: 100px 100px 0 100px;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+.section-1 .card h2 {
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #2C2C2C;
+}
+.section-1 .card p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #7E7E7E;
+}
+
+/*# sourceMappingURL=main.css.map */
