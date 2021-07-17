@@ -132,13 +132,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 80px;
 }
 .section-2 .container h2 {
   font-size: 3em;
   font-weight: 500;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
-  margin-bottom: 20px;
+  margin: 0;
   color: #2C2C2C;
 }
 .section-2 .container .btn {
@@ -155,8 +156,19 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
 }
-.section-2 .container .gallery-row img {
+.section-2 .container .gallery-row div {
+  overflow: hidden;
+  height: 600px;
+  background: #000;
+}
+.section-2 .container .gallery-row div img {
   width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+.section-2 .container .gallery-row div img:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
