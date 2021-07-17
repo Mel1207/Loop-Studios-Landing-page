@@ -1,5 +1,8 @@
 # Frontend Mentor - Loopstudios landing page
 
+Live link here:
+https://loopstudiosno3challange.netlify.app/
+
 ![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
