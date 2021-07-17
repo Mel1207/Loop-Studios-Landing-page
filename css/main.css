@@ -125,4 +125,38 @@ a {
   color: #7E7E7E;
 }
 
+.section-2 {
+  padding: 10vh 0;
+}
+.section-2 .container .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-2 .container h2 {
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #2C2C2C;
+}
+.section-2 .container .btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  background: #fff;
+  padding: 10px 50px;
+  border: 2px solid #000;
+}
+.section-2 .container .gallery-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.section-2 .container .gallery-row img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
