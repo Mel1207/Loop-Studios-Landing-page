@@ -216,6 +216,21 @@ a {
 }
 .section-footer .container .footer-lower .footer-links li a {
   color: #fff;
+  position: relative;
+}
+.section-footer .container .footer-lower .footer-links li a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #fff;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s ease;
+}
+.section-footer .container .footer-lower .footer-links li a:hover::before {
+  width: 24px;
 }
 .section-footer .container .footer-lower .copyright {
   color: rgba(255, 255, 255, 0.5);

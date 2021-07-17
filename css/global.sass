@@ -211,7 +211,23 @@ a
                     margin-right: 30px
                     
                     a 
-                        color: $cWhite
+                        color: $cWhite 
+                        position: relative
+
+                        &::before
+                            position: absolute
+                            content: ""
+                            height: 2px 
+                            width: 0
+                            background: $cWhite
+                            bottom: -10px
+                            left: 50%
+                            transform: translateX(-50%)
+                            transition: 0.5s ease
+
+                        &:hover
+                            &::before
+                                width: 24px
 
             .copyright 
                 color: rgba(#fff, .5)
