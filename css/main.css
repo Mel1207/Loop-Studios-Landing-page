@@ -33,6 +33,7 @@ a {
   transition: all 0.3s ease;
 }
 .nav-top .nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,7 @@ a {
 
 .toggle {
   background: #000;
-  padding: 1rem !important;
+  padding: 1rem 0 !important;
 }
 
 .hamburger-menu {
@@ -333,6 +334,30 @@ a {
   }
   .header h1 br.break {
     display: block !important;
+  }
+
+  .section-1 {
+    height: auto;
+  }
+  .section-1 .reflector {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .section-1 .reflector img {
+    height: auto !important;
+    width: auto !important;
+  }
+  .section-1 .reflector .card {
+    position: relative;
+    padding: 100px 0 0;
+    text-align: center;
+  }
+
+  .section-2 .section-head {
+    justify-content: center !important;
+  }
+  .section-2 .section-head .btn {
+    display: none;
   }
 }
 
