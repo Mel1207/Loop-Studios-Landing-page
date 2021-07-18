@@ -30,6 +30,7 @@ a {
   right: 0;
   padding: 3rem 0;
   z-index: 10;
+  transition: all 0.3s ease;
 }
 .nav-top .nav-container {
   display: flex;
@@ -67,6 +68,11 @@ a {
 .nav-top .nav-container .nav-links a:hover::before {
   width: 24px;
   opacity: 1;
+}
+
+.toggle {
+  background: #000;
+  padding: 1rem !important;
 }
 
 .container {
