@@ -216,6 +216,12 @@ a {
   background: #fff;
   position: relative;
 }
+.section-2 .container .gallery-row div .desktop {
+  display: block;
+}
+.section-2 .container .gallery-row div .mobile {
+  display: none;
+}
 .section-2 .container .gallery-row div img {
   width: 100%;
   height: 100%;
@@ -372,6 +378,12 @@ a {
   .section-2 .gallery-row div {
     height: 30vh !important;
     margin-bottom: 15px;
+  }
+  .section-2 .gallery-row div .desktop {
+    display: none !important;
+  }
+  .section-2 .gallery-row div .mobile {
+    display: block !important;
   }
 
   .section-footer {
