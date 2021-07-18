@@ -54,29 +54,31 @@ a
         .nav-links
             display: flex
             justify-content: space-between
-            width: 25%
             list-style: none
 
-            a 
-                color: $cWhite
-                position: relative
+            .nav-link 
+                margin-left: 20px
 
-                &::before
-                    position: absolute
-                    content: ""
-                    height: 2px 
-                    width: 0
-                    opacity: 0
-                    background: $cWhite
-                    bottom: -10px
-                    left: 50%
-                    transform: translateX(-50%)
-                    transition: 0.5s ease
+                a 
+                    color: $cWhite
+                    position: relative
 
-                &:hover
                     &::before
-                        width: 24px
-                        opacity: 1
+                        position: absolute
+                        content: ""
+                        height: 2px 
+                        width: 0
+                        opacity: 0
+                        background: $cWhite
+                        bottom: -10px
+                        left: 50%
+                        transform: translateX(-50%)
+                        transition: 0.5s ease
+
+                    &:hover
+                        &::before
+                            width: 24px
+                            opacity: 1
 
 // NAV CLASS TOGGLE
 .toggle 
