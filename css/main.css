@@ -338,6 +338,10 @@ a {
   .section-2 .gallery-row {
     grid-template-columns: 1fr 1fr !important;
   }
+
+  .header h1 br.break {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav-top .nav-links {
@@ -350,9 +354,6 @@ a {
   }
   .header h1 {
     font-size: 45px;
-  }
-  .header h1 br.break {
-    display: block !important;
   }
 
   .section-1 {
