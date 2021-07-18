@@ -66,12 +66,13 @@ a
 
 // NAV CLASS TOGGLE
 .toggle 
-    background: #000
+    background: $cBlack
     padding: 1rem !important
 
 .container 
     // position: relative
-    max-width: 80%
+    width: 80%
+    max-width: 1400px
     margin: auto
 
 .header 
@@ -115,32 +116,39 @@ a
         position: relative
         overflow: hidden
 
-    img 
-        width: 60%
-        min-width: 300px
-        height: auto 
-
-    .card
+    .reflector
+        width: 100%
         height: auto
-        width: 50%
-        background: #fff
-        padding: 100px 100px 0 100px
-        position: absolute
-        right: 0
-        bottom: 4px
 
-        h2 
-            font-size: 3em
-            font-weight: 500
-            text-transform: uppercase
-            font-family: 'Josefin Sans', sans-serif
-            margin-bottom: 20px
-            color: #2C2C2C
+        img 
+            width: 60%
+            min-width: 300px
+            height: auto
+            // min-height: 500px
+            display: block
 
-        p 
-            font-size: 18px
-            line-height: 30px
-            color: #7E7E7E
+        .card
+            position: absolute
+            height: auto
+            max-width: 750px
+            background: $cWhite
+            padding: 100px 100px 0 100px
+            right: 0
+            bottom: 0
+            z-index: 2
+
+            h2 
+                font-size: 3em
+                font-weight: 400
+                text-transform: uppercase
+                font-family: 'Josefin Sans', sans-serif
+                margin-bottom: 20px
+                color: #2C2C2C
+
+            p 
+                font-size: 18px
+                line-height: 30px
+                color: #7E7E7E
 
 
 .section-2 
@@ -155,7 +163,7 @@ a
 
         h2
             font-size: 3em
-            font-weight: 500
+            font-weight: 400
             text-transform: uppercase
             font-family: 'Josefin Sans', sans-serif
             margin: 0
@@ -164,14 +172,14 @@ a
         .btn 
             font-size: 20px
             text-transform: uppercase
-            color: #000
+            color: $cBlack
             background: $cWhite
             padding: 10px 50px
-            border: 2px solid #000 
+            border: 2px solid $cBlack
             transition: all 0.5s
 
             &:hover
-                background: #000
+                background: $cBlack
                 color: $cWhite
 
         .gallery-row 
@@ -183,7 +191,7 @@ a
             div 
                 overflow: hidden
                 height: 600px
-                background: #fff
+                background: $cWhite
                 position: relative
 
                 img 
@@ -292,4 +300,4 @@ a
                                 opacity: 1
 
             .copyright 
-                color: rgba(#fff, .5)
+                color: rgba($cWhite, .5)
