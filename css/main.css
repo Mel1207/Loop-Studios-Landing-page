@@ -28,7 +28,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
   z-index: 10;
   transition: all 0.3s ease;
 }
@@ -102,6 +102,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+  overflow: hidden;
 }
 .header .cover {
   background: #000;
@@ -124,8 +125,11 @@ a {
   font-weight: 200;
   text-transform: uppercase;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   z-index: 2;
+}
+.header h1 br.break {
+  display: none;
 }
 
 .section-1 {
@@ -318,6 +322,17 @@ a {
 @media screen and (max-width: 768px) {
   .nav-top .nav-links {
     display: none !important;
+  }
+
+  .header {
+    height: 100vh;
+    background-position: center;
+  }
+  .header h1 {
+    font-size: 45px;
+  }
+  .header h1 br.break {
+    display: block !important;
   }
 }
 

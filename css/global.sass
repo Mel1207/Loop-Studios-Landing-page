@@ -21,8 +21,7 @@ a
     top: 0
     left: 0
     right: 0
-    padding: 3rem 0
-    // background: red
+    padding: 3rem 0 0 0
     z-index: 10
     transition: all 0.3s ease
 
@@ -96,6 +95,7 @@ a
     background-size: cover
     background-repeat: no-repeat
     background-position: center bottom
+    overflow: hidden
 
     .cover 
         background: $cBlack
@@ -119,8 +119,11 @@ a
         // line-height: 6rem
         text-transform: uppercase
         color: $cWhite
-        border: 1px solid #fff
-        z-index: 2
+        border: 2px solid #fff
+        z-index: 2 
+
+        br.break 
+            display: none
 
 .section-1
     // height: 50vh
