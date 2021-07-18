@@ -227,6 +227,7 @@ a {
   height: 100%;
   transition: all 0.5s ease;
   opacity: 1;
+  object-fit: cover;
 }
 .section-2 .container .gallery-row div p {
   position: absolute;
@@ -333,6 +334,11 @@ a {
   opacity: 1;
 }
 
+@media screen and (max-width: 1080px) {
+  .section-2 .gallery-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .nav-top .nav-links {
     display: none !important;
