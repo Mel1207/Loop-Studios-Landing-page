@@ -359,6 +359,13 @@ a {
   .section-2 .section-head .btn {
     display: none;
   }
+  .section-2 .gallery-row {
+    display: block !important;
+  }
+  .section-2 .gallery-row div {
+    height: 30vh !important;
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
