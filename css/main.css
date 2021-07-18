@@ -373,6 +373,30 @@ a {
     height: 30vh !important;
     margin-bottom: 15px;
   }
+
+  .section-footer {
+    padding: 80px 0;
+  }
+  .section-footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-footer .footer-links {
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .section-footer .footer-links li {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
+  .section-footer .footer-upper {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .section-footer .footer-lower {
+    align-items: center !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
