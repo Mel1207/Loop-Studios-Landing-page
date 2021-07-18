@@ -244,54 +244,27 @@ a
     background: #000
 
     .container 
+        display: flex
+        align-items: center
+        justify-content: space-between
+
         .footer-upper 
             display: flex
-            justify-content: space-between
-            align-items: center
+            flex-direction: column
             margin-bottom: 20px
+            // background: red
 
             a.footer-logo
                 color: $cWhite
                 font-size: $font-xl
                 text-decoration: none
                 font-weight: 600 
+                margin-bottom: 20px
 
-            .footer-social 
-                list-style: none
-                display: flex
-                align-items: center
-                
-                li 
-                    margin-left: 15px
-
-                    a 
-                        color: $cWhite
-                        position: relative
-
-                        &::before
-                            position: absolute
-                            content: ""
-                            height: 2px 
-                            width: 0
-                            opacity: 0
-                            background: $cWhite
-                            bottom: -10px
-                            left: 50%
-                            transform: translateX(-50%)
-                            transition: 0.5s ease
-
-                        &:hover
-                            &::before
-                                width: 24px
-                                opacity: 1
-
-        .footer-lower 
-            display: flex
-            justify-content: space-between
-            align-items: center
-
+            
             .footer-links
                 display: flex
+                list-style: none
 
                 li 
                     margin-right: 30px
@@ -317,5 +290,46 @@ a
                                 width: 24px
                                 opacity: 1
 
+
+
+
+        .footer-lower 
+            // background: red
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+           
             .copyright 
                 color: rgba($cWhite, .5)
+
+
+            .footer-social 
+                list-style: none
+                display: flex
+                align-items: center
+                margin-bottom: 20px
+                
+                li 
+                    margin-left: 15px
+
+                    a 
+                        color: $cWhite
+                        position: relative
+
+                        &::before
+                            position: absolute
+                            content: ""
+                            height: 2px 
+                            width: 0
+                            opacity: 0
+                            background: $cWhite
+                            bottom: -10px
+                            left: 50%
+                            transform: translateX(-50%)
+                            transition: 0.5s ease
+
+                        &:hover
+                            &::before
+                                width: 24px
+                                opacity: 1
+
