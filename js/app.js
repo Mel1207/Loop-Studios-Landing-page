@@ -13,7 +13,7 @@ const tl = new TimelineLite({ paused: true, reversed: true });
 tl.from('.mobile-link', 1, {
     opacity: 0,
     x: -100,
-    duration: 1,
+    duration: 0.3,
     stagger: .3
 })
 // tl.to('.mobile-link', 1, {
