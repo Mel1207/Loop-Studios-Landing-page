@@ -166,6 +166,7 @@ a {
   right: 0;
   bottom: 0;
   z-index: 2;
+  transition: all 0.3s ease;
 }
 .section-1 .reflector .card h2 {
   font-size: 3em;
