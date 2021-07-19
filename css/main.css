@@ -310,6 +310,7 @@ a {
   align-items: flex-end;
 }
 .section-footer .container .footer-lower .copyright {
+  text-align: center;
   color: rgba(255, 255, 255, 0.5);
 }
 .section-footer .container .footer-lower .footer-social {
@@ -501,6 +502,10 @@ a {
   }
 }
 @media screen and (max-width: 425px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
   .section-2 .container .gallery-row div p {
     font-size: 20px;
     bottom: 16px;
