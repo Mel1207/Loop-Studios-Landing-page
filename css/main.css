@@ -93,6 +93,8 @@ a {
 }
 
 .container {
+  position: relative;
+  height: 100%;
   width: 80%;
   max-width: 1400px;
   margin: auto;
@@ -130,6 +132,7 @@ a {
   color: #fff;
   border: 2px solid #fff;
   z-index: 2;
+  transition: all 0.3s ease;
 }
 .header h1 br.break {
   display: none;
@@ -341,6 +344,10 @@ a {
     grid-template-columns: 1fr 1fr !important;
   }
 
+  .header h1 {
+    width: 100%;
+    font-size: 60px;
+  }
   .header h1 br.break {
     display: block !important;
   }
