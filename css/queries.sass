@@ -29,14 +29,11 @@
 
     
 @media screen and ( max-width: 1080px ) 
-    .section-2 
-        .gallery-row 
-            grid-template-columns: 1fr 1fr !important
-
     .header 
         h1 
             width: 100%
-            font-size: 60px
+            font-size: 50px
+            padding: 2.5rem
 
             br.break 
                 display: block !important
@@ -65,6 +62,10 @@
                 p 
                     font-size: 18px
                     line-height: 30px
+
+    .section-2 
+        .gallery-row 
+            grid-template-columns: 1fr 1fr !important
     
     
 @media screen and ( max-width: 768px  )
@@ -79,12 +80,20 @@
     .header 
         height: 100vh
         background-position: center
+
         h1 
             font-size: 45px 
+            padding: 2rem
+
+    .section-1 
+        padding: 50px 0
 
     .section-2 
+        padding: 50px 0
+
         .section-head 
             justify-content: center !important
+            margin-bottom: 50px !important
 
             .btn 
                 display: none
@@ -94,7 +103,7 @@
             display: block !important
 
             div 
-                height: 30vh !important
+                height: auto !important
                 margin-bottom: 15px
 
                 .desktop
@@ -127,3 +136,44 @@
         .footer-lower 
             align-items: center !important
 
+@media screen and ( max-width: 600px )
+    .header 
+        h1 
+            font-size: 25px 
+            padding: 1.3rem
+
+    .section-1 
+        .container
+            .reflector
+                .card
+                    h2
+                        font-size: 2em
+
+                    p 
+                        font-size: 14px
+                        line-height: 20px
+
+    .section-2
+        .container
+            .section-head 
+                h2 
+                    font-size: 2em
+            .gallery-row 
+                div
+                    p 
+                        font-size: 25px
+                        bottom: 25px
+                        left: 25px
+
+
+@media screen and ( max-width: 425px )
+    .section-2
+        .container
+            .gallery-row 
+                div
+                    p 
+                        font-size: 20px
+                        bottom: 16px
+                        left: 16px
+
+    
